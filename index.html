@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculadora</title>
+</head>
+<body>
+
+<script>
+
+document.write('¡Buen dia, soy Nery Moreno Fajardo. Estudiante de la licenciatura de Diseño grafico y Animación Digital de la FADU.!')
+document.write('<br>')
+document.write('<br>')
+document.write('Este es mi primer programa con javascript en este curso, admito que es algo laborioso pero con suficiente practica espero poder mejorar mis habilidades de programación durante el transcurso de las unidades de la materia de Desarrollo de Videojuegos. A continuación se muestran los resultados de las operaiónes solicitadas por el profesor:');
+document.write('<br>');
+document.write('<br>');
+
+
+
+var ladoHexagono;
+var apotemaHexagono;
+var areaHexagono;
+var perimetroHexagono;
+
+var baseRomboide;
+var alturaRomboide;
+var ladoRomboide;
+
+var baseTriangulo;
+var alturaTriangulo;
+var ladoTriangulo;
+
+ladoHexagono=prompt('Introduce el valor de un lado del hexagono:','');
+apotemaHexagono=prompt('INtroduce el valor de la apodema del hexagono:','');
+
+baseRomboide=prompt('Introduce la base del romboide:','');
+alturaRomboide=prompt('Introduce la altura del romboide:','');
+ladoRomboide=prompt('Introduce el valor de un lado del romboide:','');
+
+baseTriangulo=prompt('Introduce la base del triangulo:','');
+alturaTriangulo=prompt('Introduce la altura del triangulo:','');
+ladoTriangulo=prompt('Introduce el valor de un lado del triangulo:','');
+
+
+perimetroHexagono=parseInt(perimetroHexagono);
+areaHexagono=parseInt(areaHexagono);
+
+areaRomboide=parseInt(areaRomboide);
+perimetroRomboide=parseInt(perimetroRomboide);
+
+areaTriangulo=parseInt(areaTriangulo);
+perimetroTriangulo=parseInt(perimetroTriangulo);
+
+
+
+var perimetroHexagono = 6 * ladoHexagono;
+var areaHexagono = (perimetroHexagono * apotemaHexagono) / 2;
+
+var areaRomboide = baseRomboide * alturaRomboide;
+var perimetroRomboide = 2 * (baseRomboide + ladoRomboide);
+ 
+var areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
+var perimetroTriangulo = ladoTriangulo + ladoTriangulo + ladoTriangulo;
+
+/*escribo resultados*/
+document.write('El perimetro del hexagono es: ');
+document.write(perimetroHexagono);
+document.write('<br>');
+document.write('El area del hexagono es: ');
+document.write(areaHexagono);
+document.write('<br>');
+document.write('<br>');
+
+document.write('El perimetro del Romboide es: ');
+document.write(perimetroRomboide);
+document.write('<br>');
+document.write('El area del Romboide es: ');
+document.write(areaRomboide);
+document.write('<br>');
+document.write('<br>');
+
+document.write('El perimetro del triangulo es: ');
+document.write(perimetroTriangulo);
+document.write('<br>');
+document.write('El area del triangulo es: ');
+document.write(areaTriangulo);
+document.write('<br>');
+document.write('<br>');
+</script>
+
+</body>
+</html>
